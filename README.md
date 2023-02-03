@@ -55,7 +55,7 @@ Two classification models were built - Logistic Regression and Decision Tree. Th
 
 The metrics used to evaluate the model performance is Recall. Recall is crucial in this scenario to correctly detect the Malignant(cancerous) tumor types so that the hospital could provide an early treatment to the patients. 
 
-**Models Performance **
+**Models Performance**
 | Model |  Recall |
 |-------|----------|
 | Logistic Regression | 97% |
