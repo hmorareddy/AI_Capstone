@@ -76,7 +76,8 @@ Logistic regression model achieved 97% true positive rate and Random forest got 
 
 **Links to the final notebook and presentation**
 - [index.ipynb](.//index.ipynb)
+-[Presentation.pdf](.//Presentation.pdf)
 
 **Reproduction instructions**
 - Download the [dataset](https://www.kaggle.com/datasets/uciml/breast-cancer-wisconsin-data) available on Kaggle.
-- Download [index.ipynb](.//index.ipynb) and open it on Google Colab or Jupyter Notebook to run 
+- Download [index.ipynb](.//index.ipynb) and open it on Google Colab or Jupyter Notebook to run, make sure you install all the required libraries
