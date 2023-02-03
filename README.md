@@ -38,3 +38,45 @@ The dataset consists of several human cell sample records, each of which contain
 Given breast cancer results from breast fine-needle aspiration (FNA) test (is a quick and simple procedure to perform, which removes some fluid or cells from a breast lesion or cyst (a lump, sore, or swelling) with a fine needle similar to a blood sample needle). The features have been computed from digitized images of the cell nuclei, which can be used to build a model to predict whether a tumor is benign or malignant.
 * 1 = Malignant (Cancerous) - Present
 * 0 = Benign (Not Cancerous) -Absent
+
+![image](https://user-images.githubusercontent.com/110204917/216629877-f3a9672e-f0ff-47ad-82b4-0ee4554aa211.png)
+
+* There are 357 Benign and 212 cancer tumor categories
+
+Removed unnecessary columns and there are no missing values in the data.
+
+![image](https://user-images.githubusercontent.com/110204917/216631007-a66d04de-4935-4c44-b752-e72ce2b3d45b.png)
+
+* We can clearly see that several columns are very highly correlated, causing multicollinearity among independent variables. After analysing the above plot, columns with a threashold value of above 0.85 have been removed from the dataset 
+
+## Modeling and Evaluation
+
+Two classification models were built - Logistic Regression and Decision Tree. They were optimized with GridSearchCV.
+
+The metrics used to evaluate the model performance is Recall. Recall is crucial in this scenario to correctly detect the Malignant(cancerous) tumor types so that the hospital could provide an early treatment to the patients. 
+
+**Models Performance **
+| Model |  Recall |
+|-------|----------|
+| Logistic Regression | 97% |
+| Decision Tree| 94% |
+
+Logistic regression model achieved 97% true positive rate and Random forest got a recall(true positive rate) score of 94%
+
+## Conclusion
+
+- Logistic regression had the highest true positive rate of 97% when compared to the Decision Tree model. Hence, Logistic Regression is chosen as the best model to predict the tumor categories.One of the limitations is that the training data used is small and one of the next steps would be to train a model on neural network on a larger sample of data.
+
+## Repository
+
+**An explanation of the repository organization**
+- Data : folder for Breast Cancer tumor dataset used for this project
+- index.ipynb : jupyter notebook for EDA, data cleaning, modeling and evaluation
+- Presentation.pdf : final presentation slides
+
+**Links to the final notebook and presentation**
+- [index.ipynb](.//index.ipynb)
+
+**Reproduction instructions**
+- Download the [dataset](https://www.kaggle.com/datasets/uciml/breast-cancer-wisconsin-data) available on Kaggle.
+- Download [index.ipynb](.//index.ipynb) and open it on Google Colab or Jupyter Notebook to run 
