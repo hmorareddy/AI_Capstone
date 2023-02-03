@@ -16,3 +16,25 @@ Early detection of breast cancer is key and can help improve the chances of surv
 Classification model built will be used by the hospital to determine if the patient has malignant cancer or not and this could help in early diagnosis of Breast cancer that can improve the prognosis and chance of survival significantly, as it can promote timely clinical treatment to patients.Further accurate classification of benign tumors can also prevent patients undergoing unnecessary treatments.
 
 ## Data Understanding
+
+The dataset consists of several human cell sample records, each of which contains the values of a set of characteristics of the nucleus. Here is a **[link](https://www.kaggle.com/datasets/uciml/breast-cancer-wisconsin-data)** to the dataset. It is available as machine learning repository maintained by the University of California, Irvine.
+
+<strong>Features computed from each cell nucleus:</strong>
+
+- radius (mean of distances from center to points on the perimeter)
+- texture (standard deviation of gray-scale values)
+- perimeter
+- area
+- smoothness (local variation in radius lengths)
+- compactness (perimeter^2 / area - 1.0)
+- concavity (severity of concave portions of the contour)
+- concave points (number of concave portions of the contour)
+- symmetry
+- fractal dimension ("coastline approximation" - 1)
+<br>
+
+<strong>Expected outcome </strong>
+
+Given breast cancer results from breast fine-needle aspiration (FNA) test (is a quick and simple procedure to perform, which removes some fluid or cells from a breast lesion or cyst (a lump, sore, or swelling) with a fine needle similar to a blood sample needle). The features have been computed from digitized images of the cell nuclei, which can be used to build a model to predict whether a tumor is benign or malignant.
+* 1 = Malignant (Cancerous) - Present
+* 0 = Benign (Not Cancerous) -Absent
